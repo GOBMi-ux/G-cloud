@@ -19,7 +19,7 @@ read -p "choose ngrok region: " CRP
 echo "===================================="
 echo "Install RDP"
 echo "===================================="
-docker pull danielguerra69/ubuntu-xrdp-docker
+docker pull danchitnis/ubuntu-xrdp
 clear
 echo "===================================="
 echo "Start RDP"
