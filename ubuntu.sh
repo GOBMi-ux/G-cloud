@@ -17,12 +17,6 @@ echo "in - India (Mumbai)"
 read -p "choose ngrok region: " CRP
 ./ngrok tcp --region $CRP 3388 &>/dev/null &
 echo "===================================="
-echo "Install Telegram"
-echo "===================================="
-yes '' | sudo add-apt-repository ppa:atareao/telegram > /dev/null 2>&1
-sudo apt update > /dev/null 2>&1
-sudo apt install telegram > /dev/null 2>&1
-echo "===================================="
 echo "Install RDP"
 echo "===================================="
 docker pull danielguerra69/ubuntu-xrdp
