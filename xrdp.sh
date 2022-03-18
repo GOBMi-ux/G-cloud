@@ -1,9 +1,9 @@
 apt update
 apt install screen -y
 apt install sudo -y
-sudo adduser aank --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
-echo "aank:LinggaHosting" | sudo chpasswd
-sudo usermod -aG sudo,adm aank
+sudo adduser mariomi --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
+echo "mariomi:123456" | sudo chpasswd
+sudo usermod -aG sudo,adm mariomi
 clear
 rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
 wget -O ng.sh https://bit.ly/GCngr0k > /dev/null 2>&1
@@ -38,8 +38,8 @@ sudo service xrdp start
 clear
 echo "=======================100%"
 echo "===================================="
-echo "Username : aank"
-echo "Password : LinggaHosting"
+echo "Username : mariomi"
+echo "Password : 123456"
 echo "right click to open menu"
 echo RDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
