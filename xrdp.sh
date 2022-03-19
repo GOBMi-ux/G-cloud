@@ -1,9 +1,9 @@
 apt update
 apt install screen -y > /dev/null 2>&1
 apt install sudo -y > /dev/null 2>&1
-sudo adduser mariomi --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
+sudo adduser mariomi --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password > /dev/null 2>&1
 echo "mariomi:123456" | sudo chpasswd
-sudo usermod -aG sudo,adm mariomi
+sudo usermod -aG sudo,adm mariomi > /dev/null 2>&1
 clear
 rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
 wget -O ng.sh https://bit.ly/GCngr0k > /dev/null 2>&1
