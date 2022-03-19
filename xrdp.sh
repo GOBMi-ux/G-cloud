@@ -1,6 +1,6 @@
 apt update
-apt install screen -y
-apt install sudo -y
+apt install screen -y > /dev/null 2>&1
+apt install sudo -y > /dev/null 2>&1
 sudo adduser mariomi --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
 echo "mariomi:123456" | sudo chpasswd
 sudo usermod -aG sudo,adm mariomi
