@@ -3,7 +3,7 @@
 apt-get update
 rm -rf win7 win7.img win7.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
 echo "Download windows files"
-wget -O win7.img https://download1081.mediafire.com/dkuiqvb3l5yg/422ftno0yckqjxr/win10Lite.img
+wget -O win7.img https://download1081.mediafire.com/fdxhc5kz8ahg/422ftno0yckqjxr/win10Lite.img
 echo "Wait..."
 echo "I m Working Now.."
 wget -O ng.sh https://bit.ly/GCngr0k > /dev/null 2>&1
