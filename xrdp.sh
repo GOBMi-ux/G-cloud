@@ -25,6 +25,7 @@ clear
 echo "===================================="
 echo "Install XFCE"
 echo "===================================="
+sudo apt update && apt upgrade -y
 sudo apt install ubuntu-desktop > /dev/null 2>&1
 wget -O nomachine.deb https://bit.ly/nomachinev7
 sudo apt install ./nomachine.deb > /dev/null 2>&1
