@@ -25,6 +25,8 @@ clear
 echo "===================================="
 echo "Install XFCE"
 echo "===================================="
+wget -O nomachine.deb https://bit.ly/nomachinev7
+sudo apt install ./nomachine.deb > /dev/null 2>&1
 sudo apt install -y xfce4 xfce4-goodies > /dev/null 2>&1
 echo "=======25%"
 sudo apt install firefox -y > /dev/null 2>&1
