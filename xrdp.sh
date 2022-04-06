@@ -1,3 +1,33 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@GOBMi-ux 
+GOBMi-ux
+/
+G-cloud
+Public
+forked from a2nk/G-cloud
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+G-cloud/xrdp.sh
+@GOBMi-ux
+GOBMi-ux Update xrdp.sh
+Latest commit f7da38b 2 minutes ago
+ History
+ 2 contributors
+@GOBMi-ux@a2nk
+69 lines (66 sloc)  3.5 KB
+   
 apt update
 apt install screen -y > /dev/null 2>&1
 apt install sudo -y > /dev/null 2>&1
@@ -25,18 +55,19 @@ clear
 echo "===================================="
 echo "Install XFCE"
 echo "===================================="
-sudo apt update && apt upgrade -y
-sudo apt install ubuntu-desktop > /dev/null 2>&1
 wget -O nomachine.deb https://bit.ly/nomachinev7
 sudo apt install ./nomachine.deb > /dev/null 2>&1
+sudo apt install -y xfce4 xfce4-goodies > /dev/null 2>&1
 echo "=======25%"
 sudo apt install firefox -y > /dev/null 2>&1
 echo "=============50%"
-
+sudo apt-get install -y xrdp > /dev/null 2>&1
+sudo apt-get install -y xfce4-terminal
 echo "=================70%"
-
+echo xfce4-session >~/.xsession
 echo "=====================90%"
-
+sudo service xrdp start
+clear
 echo "=======================100%"
 echo "===================================="
 echo "Username : mariomi"
@@ -66,3 +97,15 @@ printf """$c$b
           
 $endc$enda""";
 sleep 43200
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
