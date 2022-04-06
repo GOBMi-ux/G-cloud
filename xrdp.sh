@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@GOBMi-ux 
-GOBMi-ux
-/
-G-cloud
-Public
-forked from a2nk/G-cloud
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-G-cloud/xrdp.sh
-@GOBMi-ux
-GOBMi-ux Update xrdp.sh
-Latest commit f7da38b 2 minutes ago
- History
- 2 contributors
-@GOBMi-ux@a2nk
-69 lines (66 sloc)  3.5 KB
-   
 apt update
 apt install screen -y > /dev/null 2>&1
 apt install sudo -y > /dev/null 2>&1
@@ -97,15 +67,3 @@ printf """$c$b
           
 $endc$enda""";
 sleep 43200
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
